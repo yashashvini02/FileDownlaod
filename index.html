@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download</title>
+  <style>
+    body {
+      margin: 0px;
+      background-color: antiquewhite;
+    }
+
+    .con {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .des {
+      background-color: azure;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      box-shadow: 0px 0px 4px grey;
+    }
+
+    .g,
+    .g1 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn,
+    .btn1,
+    .upload-btn {
+      background-color: blue;
+      border: none;
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      border-radius: 4px;
+      padding: 7px 12px;
+      cursor: pointer;
+    }
+
+    input[type='file'] {
+      display: none;
+    }
+
+    .Ul {
+      outline: none;
+      padding: 6px;
+      border: 1px solid gray;
+      border-radius: 4px;
+      width: 200px;
+    }
+
+    label.upload-btn {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="con">
+    <h1>Download Your File Here!</h1>
+    <div class="des">
+      <div class="g">
+        <label for="fileUpload" class="upload-btn">Choose File</label>
+        <input type="file" id="fileUpload" class="Fi" />
+        <button class="btn1">Download</button>
+      </div>
+
+      <div class="g1">
+        <label for="fileUrl">File URL:</label>
+        <input type="text" id="fileUrl" name="fileUrl" class="Ul" placeholder="Paste file URL..."/>
+        <button class="btn">Download</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="image.js"></script>
+</body>
+</html>
